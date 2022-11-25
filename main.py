@@ -11,7 +11,7 @@ def get_words(chars):
     vocab = []
     arr.sort()
     for i in range(len(arr)):
-        if arr[i].startswith(chars) is True and len(vocab) < 5:
+        if arr[i].startswith(chars) and len(vocab) < 5:
             vocab.append(arr[i])
     return vocab
 
